@@ -20,7 +20,7 @@ var isValid = function(s) {
     for (let i=0; i<s.length; i++) {
         if (left[s[i]]) {
             temp.push(s[i]);
-        } else if (!temp.length || ( right[s[i]] != left[temp.pop()] )) {
+        } else if ( right[s[i]] != left[temp.pop()] ) {
             return false;
         }
     }
