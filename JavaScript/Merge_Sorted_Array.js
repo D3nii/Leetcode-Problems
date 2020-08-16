@@ -12,6 +12,7 @@ var merge = function(nums1, m, nums2, n) {
         nums1[m+i] = nums2[i];
     
     var len = nums1.length;
+    
     for (var i = len-1; i>=0; i--){
         for(var j = 1; j<=i; j++){
             if(nums1[j-1]>nums1[j]){
